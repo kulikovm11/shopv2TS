@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Route, Routes} from 'react-router-dom'
+import {
+    BlogPage,
+    CartPage,
+    LoginPage,
+    MainPage,
+    NotFound,
+    ProductDescriptionPage,
+    RegisterPage,
+    WishListPage
+} from "./pages";
+import {ProfilePage} from "./pages";
+import {MainLayout} from "./layout";
+;
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <>
 
-export default App;
+            <Routes>
+
+                <Route path={'/'} element={<MainLayout/>}>
+                    <Route index element={<MainPage/>}/>
+                    <Route path={':prodId'} element={<ProductDescriptionPage/>}/>
+                    <Route path={'profile'} element={<ProfilePage/>}/>
+                    <Route path={'login'} element={<LoginPage/>}/>
+                    <Route path={'register'} element={<RegisterPage/>}/>
+                    <Route path={'cart'} element={<CartPage/>}/>
+                    <Route path={'wish'} element={<WishListPage/>}/>
+                    <Route path={'blog'} element={<BlogPage/>}/>
+                    <Route path={'*'} element={<NotFound/>}/>
+                </Route>
+
+            </Routes>
+        </>
+
+);
+};
+
+export {App};

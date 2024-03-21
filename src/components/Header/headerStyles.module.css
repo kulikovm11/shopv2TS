@@ -1,0 +1,14 @@
+.Actions{
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Username{
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: cornflowerblue;
+}
+

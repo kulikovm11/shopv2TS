@@ -1,0 +1,47 @@
+.Wrap{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-gap: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.WrapperContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.Paginator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1635px) {
+    .Wrap {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 1250px) {
+    .Wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 720px) {
+    .Wrap {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 450px) {
+    .Wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

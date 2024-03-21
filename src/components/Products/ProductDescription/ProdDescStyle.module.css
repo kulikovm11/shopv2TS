@@ -1,0 +1,100 @@
+.Wrapper{
+
+    padding: 10px;
+
+}
+
+.Top_part{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.Image{
+    width: 400px;
+    height: 400px;
+    transition: 0.5s ease;
+}
+.Description{
+    width: 500px;
+}
+
+.Title{
+    font-size: 24px;
+}
+
+.Brand{
+
+}
+.Rate{
+    text-align: center;
+}
+.Price{
+    width: 162px;
+    height: 55px;
+    border: 1px solid cornflowerblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.Actions{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 280px;
+}
+.Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tabs{
+    padding-top: 20px;
+}
+
+
+
+@media screen and (max-width: 1450px) {
+    .Top_part{
+
+        flex-direction: column;
+    }
+    .Carousel{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .Actions{
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    .Top_part{
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 530px) {
+
+    .Description{
+        width: 300px;
+        padding-top: 25px;
+    }
+    .Price{
+        width: 62px;
+        height: 40px;
+        font-size: 14px;
+
+    }
+
+}

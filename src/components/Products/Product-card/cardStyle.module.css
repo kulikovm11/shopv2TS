@@ -1,0 +1,48 @@
+.Card_wrap{
+width: 345px;
+}
+
+.Brand_title {
+    color: cornflowerblue;
+}
+
+.Price_title {
+    color: green;
+}
+
+
+
+
+@media screen and (max-width: 1669px) {
+    .Card_wrap{
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1420px) {
+    .Card_wrap{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .Card_wrap{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .Card_wrap{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .Card_wrap{
+        width: 345px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .Card_wrap{
+        width: 145px;
+    }
+}
